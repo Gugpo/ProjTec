@@ -3,12 +3,10 @@ using ProjTec_XPInc.DataContext;
 using ProjTec_XPInc.Services.ClientService;
 using ProjTec_XPInc.Services.EmailSchedulerService;
 using ProjTec_XPInc.Services.InvestmentManagementService;
-using ProjTec_XPInc.Services.SendEmailService;
-using System.Reflection;
 
 internal class Program
 {
-	private static void Main(string[] args, EmailScheduler emailScheduler)
+	private static void Main(string[] args)
 	{
 		var builder = WebApplication.CreateBuilder(args);
 
@@ -40,7 +38,6 @@ internal class Program
 		app.MapControllers();
 		app.Run();
 
-		emailScheduler.Start();
 		
 	}
 }
