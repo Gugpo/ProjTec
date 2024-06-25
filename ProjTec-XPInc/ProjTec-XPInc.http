@@ -1,0 +1,6 @@
+@ProjTec_XPInc_HostAddress = http://localhost:5157
+
+GET {{ProjTec_XPInc_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
